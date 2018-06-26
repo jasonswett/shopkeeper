@@ -4,6 +4,7 @@
 
 - PostgreSQL
 - Ruby 2.5.1
+- Bundler
 
 ## Installation and Setup
 
