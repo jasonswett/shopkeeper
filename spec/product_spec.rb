@@ -9,6 +9,14 @@ RSpec.describe Product do
     end
   end
 
+  describe 'when name is not unique' do
+    it 'is not valid' do
+      Product.create!(name: 'Pen', price_cents: 500)
+      pen = Product.new(name: 'Pen', price_cents: 600)
+      expect(pen).not_to be_valid
+    end
+  end
+
   describe 'price' do
     let!(:product) do
       Product.new(

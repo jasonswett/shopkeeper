@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 
   def formatted_price
     '$' + sprintf('%.2f', price_in_dollars)
