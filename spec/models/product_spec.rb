@@ -1,5 +1,5 @@
-require_relative '../config/spec_helper.rb'
-require_relative '../models/product'
+require_relative '../../config/spec_helper.rb'
+require_relative '../../models/product'
 
 RSpec.describe Product do
   describe 'when name is missing' do
