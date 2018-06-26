@@ -1,5 +1,4 @@
-require 'rspec'
-require_relative '../config/database'
+require_relative '../config/spec_helper.rb'
 require_relative '../models/product'
 
 RSpec.describe Product do
