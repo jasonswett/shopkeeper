@@ -3,6 +3,6 @@
 require_relative 'config/database'
 require_relative 'models/product'
 
-Product.all.each do |p|
-  puts p.name
+Product.all.each do |product|
+  puts "#{product.name} (#{product.formatted_price})"
 end
