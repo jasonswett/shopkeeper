@@ -17,7 +17,7 @@ RSpec.describe Product do
     end
   end
 
-  describe 'price' do
+  describe 'price formatting' do
     let!(:product) do
       Product.new(
         name: 'Solid Gold Stapler',
